@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FutureDev - your new blog</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="asocial-area">
+            <span class="asocial-icon facebook">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </span>
+            <span class="asocial-icon linkedin">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </span>
+        </div>
+    </div>
+    <header class="main-banner">
+            <a href="#">
+                <img src="banner.jpg" alt="Code">
+            </a>
+    </header>
+    <nav class="main-nav">
+        <ul class="clearfix">
+            <li><a href="#"><i class="fas fa-home"></i>Strona główna</a></li>
+            <li><a href="#"><i class="fas fa-play-circle"></i>Zacznij tutaj</a></li>
+            <li><a href="#"><i class="fas fa-smile-wink"></i>O mnie</a></li>
+            <li><a href="#"><i class="fas fa-users"></i>Kontakt</a></li>
+        </ul>
+    </nav>
+    <section class="main-section">
+        <aside class="side-text">
+            <div class="ad-container">Place for ads
+            </div>
+        </aside>
+        <main class="main-text">
+            <h2 class="post-title">
+                <a href="/blog/{{ post.id }}">Tytuł posta<!-- {{ post.title }} --></a>
+            </h2>
+            <div class="post-info">
+                <span class="date-date"><i class="far fa-calendar-alt"></i>Grudzień 1, 2018<!-- {{ post.date|date:'Y-m-d' }}--></span>
+                <span class="date-time"><i class="far fa-clock"></i>16:36:00<!-- {{ post.date|date:'h:m:s' }} --></span>
+                <span><i class="fas fa-user"></i>Imię Nazwisko<!--{{ post.author }}--></span>
+            </div>
+            <div class="post-body">
+                Treść posta | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quibusdam quas odio?
+                Quia
+                minus aliquid iusto soluta! Aliquid totam consequatur omnis iusto facilis qui vitae nesciunt, nam,
+                laboriosam accusamus voluptas. Repellendus eos perferendis tenetur sunt soluta nemo temporibus!
+                Alias
+                excepturi delectus suscipit harum animi, maiores ab sint perferendis nihil voluptatum!
+                <!-- {{ post.body }} -->
+            </div>
+        </main>
+    </section>
+    <footer class="main-footer">
+        <section class="main-footer-section">
+            <div class="first-main-footer-column">
+                <h3>Strony</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Strona główna</a></li>
+                        <li><a href="#">Zacznij tutaj</a></li>
+                        <li><a href="#">O mnie</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="second-main-footer-column">
+                <h3>Najnowsze wpisy</h3>
+                <!-- Here you can put a link to the latest posts. -->
+                <ul>
+                    <li><a href="#">Post 1</a></li>
+                    <li><a href="#">Post 2</a></li>
+                    <li><a href="#">Post 3</a></li>
+                    <li><a href="#">Post 4</a></li>
+                    <li><a href="#">Post 5</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="secondary-footer-section">
+            <div class="first-secondary-footer-column">
+                <span>&copy;Copyright FutureDev 2018r. All rights reserved.</span>
+                <span><a href="#">Polityka prywatności</a></span>
+            </div>
+            <div class="second-secondary-footer-column">
+                <span>You can type some text here.</span>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
