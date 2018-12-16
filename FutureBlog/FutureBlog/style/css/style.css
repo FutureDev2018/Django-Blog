@@ -85,7 +85,7 @@ header.main-banner img {
 nav.main-nav {
     width: 100%;
     /* margin: 0 auto; */
-    margin-bottom: 60px;
+    margin-bottom: 75px;
     height: 70px;
     background-color: #232323;
 }
@@ -130,59 +130,104 @@ nav.main-nav ul li a:hover {
 /* Content */
 
 section.main-section {
-    display: flex;
-    /* flex-direction: row; */
-    align-items: stretch;
-    /* flex-grow: 1; */
-    width: 100%;
-    max-width: 1200px;
-    min-height: 100vh;
-    margin-bottom: 50px;
-}
 
-/* ________Secondary info about post________ */
-/* Aside */
-
-aside.side-text {
-    flex-basis: 30%;
-    min-width: 280px;
-    margin: 0 20px 0 0;
-    border: 2px solid black;
 }
 
 /* ________Main content________ */
 /* Main */
 
-main.main-text {
-    flex-grow: 1;
-    margin: 0 0 0 20px;
-    /* background-color: gray; */
+section.main-section {
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: stretch; */
+    /* flex-grow: 1; */
+    width: 100%;
+    max-width: 1280px;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    background-color: #ddd;
 }
 
-main.main-text .post-title {
-    margin-bottom: 8px;
-    font-size: 26px;
+section.main-section .container-of-posts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-main.main-text .post-title a {
-    text-decoration: none;
-    color: rgb(54, 54, 54);
+section.main-section .container-of-posts [class|=row] {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
 }
 
-main.main-text .post-info {
-    margin-bottom: 30px;
-    font-size: 14px;
-    color: #9F9F9F;
+section.main-section .container-of-posts .row-1 {
+    flex-basis: 500px;
+    margin-bottom: 60px;
+    background-color: red;
 }
 
-main.main-text .post-info span+span {
-    margin: 0 7px;
+section.main-section .container-of-posts .row-1 [class|=post] {
+    /* width: 100%; */
 }
 
-main.main-text .post-info i {
-    margin-right: 6px;
-    /* font-size: 24px; */
-    /* vertical-align: -1px; */
+section.main-section .container-of-posts .row-1 .post-1 {
+    flex-basis: 65%;
+    margin-right: 30px;
+    background-color: orange;
+}
+
+section.main-section .container-of-posts .row-1 .post-2 {
+    flex-basis: 35%;
+    margin-left: 30px;
+    background-color: brown;
+}
+
+section.main-section .container-of-posts .row-2 {
+    flex-basis: 300px;
+    margin-bottom: 60px;
+    background-color: green;
+}
+
+section.main-section .container-of-posts .row-2 .post-3 {
+    flex-basis: 33%;
+    margin-left: 30px;
+    background-color: brown;
+}
+
+section.main-section .container-of-posts .row-2 .post-4 {
+    flex-basis: 33%;
+    margin-left: 30px;
+    background-color: brown;
+}
+
+section.main-section .container-of-posts .row-2 .post-5 {
+    flex-basis: 33%;
+    margin-left: 30px;
+    background-color: brown;
+}
+
+section.main-section .container-of-posts .row-3 {
+    flex-basis: 300px;
+    background-color: blue;
+}
+
+section.main-section .container-of-posts .row-3 .post-6 {
+    flex-basis: 33%;
+    margin-left: 30px;
+    background-color: brown;
+}
+
+section.main-section .container-of-posts .row-3 .post-7 {
+    flex-basis: 33%;
+    margin-left: 30px;
+    background-color: brown;
+}
+
+section.main-section .container-of-posts .row-3 .post-8 {
+    flex-basis: 33%;
+    margin-left: 30px;
+    background-color: brown;
 }
 
 /* ________Footer________ */
